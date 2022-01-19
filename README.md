@@ -93,6 +93,35 @@ Aug. 2021 | 33,067 | 33,067 | 45,935
 
 
 #### The IP address included in the certificates
+on Nov. 2020
+| IP Addr.| # of appearances |
+----|----:
+192.168.168.168 | 5615
+192.168.1.1 | 4362
+192.168.0.1 | 2275
+172.20.0.1 | 1968
+10.0.0.1 | 1919
+192.168.1.108 | 1904
+10.100.0.1 | 1665
+127.0.0.1 | 1481
+10.252.252.252 | 644
+192.168.1.101 | 422
+
+
+on Aug. 2021
+| IP Addr.| # of appearances |
+----|----:
+192.168.168.168 | 5148
+192.168.1.1 | 4036
+172.20.0.1 | 3095
+10.100.0.1 | 2380
+10.0.0.1 | 2281
+192.168.1.108 | 1645
+127.0.0.1 | 1569
+10.252.252.252 | 621
+192.168.0.1 | 613
+10.3.240.1 | 442
+
 
 ## Publication
 Akira Kanaoka, Yuki Oyama, Masayuki Okada, "***Study of Web Server Certificates Containing IP Addresses As Subjects***", 2022 Symposium on Cryptography and Information Security (SCIS 2022), 2022  (published in Japanese)
