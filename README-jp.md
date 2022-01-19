@@ -40,11 +40,10 @@ Amazon Web Service上のEC2インスタンスより[ZMap](https://github.com/zma
 実際に利用したコマンドは以下の通りである。
 
 ~~~
-timeout 10s openssl s_client -connect $line:443
+timeout 10s openssl s_client -connect ＜IPアドレス＞:443
 ~~~
 
-
-
+得られた証明書をさらに`openssl x509 -text`を用いてテキスト化して保存する。
 
 
 
