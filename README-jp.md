@@ -24,6 +24,15 @@ Webサーバ証明書の設定項目のサブジェクト内のCN (Common Name) 
 
 
 ### WebIP証明書の実在調査
+WebIP証明書の実在調査は以下の段階により行った
+1. 全IPv4アドレスのTCP443番ポート開放調査
+2. 443ポート開放IPアドレスにhttp（TLS）アクセス
+3. 取得証明書のSubject CN（Common Name）とSAN（Subject Alt Name）フィールドの確認
+
+それぞれの詳細は以下の通りである。
+
+#### 全IPv4アドレスのTCP443番ポート開放調査
+Amazon Web Service上のEC2インスタンスよりZMap[https://github.com/zmap/zmap]を用いてインターネット上のIPv4アドレスで443番ポートのサービスを提供しているホストを調査
 
 
 
