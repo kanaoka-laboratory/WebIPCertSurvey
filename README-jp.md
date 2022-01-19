@@ -1,4 +1,4 @@
-WebIP証明書の調査と分析
+WebIP証明書証明書の調査と分析
 ====
 English version of README is [here](/README.md)
 
@@ -10,12 +10,15 @@ Webサーバ証明書の設定項目のサブジェクト内のCN (Common Name) 
 ### 主要なWebサーバ証明書発行サービスの規定調査
 主要なWebサーバ証明書発行サービスにおいてCP/CPSの記載を調べ、WebIP証明書の発行が可能かどうか、またWebIP証明書発行時のIPアドレスの確認方法を調べる。
 
-調査した証明書発行サービスは以下の5つとした。
+調査した証明書発行サービスは以下の5つとした。それぞれのCPやCPSが掲載されているURLも付記する
 - Let's Encrypt
+  - https://letsencrypt.org/documents/isrg-cp-v3.1/
 - Sectigo
 - DigiCert
 - セコム
 - UPKI電子証明書発行サービス
+
+
 
 ### WebIP証明書の実在調査
 
@@ -23,6 +26,11 @@ Webサーバ証明書の設定項目のサブジェクト内のCN (Common Name) 
 
 
 ## 結果
+
+### 主要なWebサーバ証明書発行サービスの規定調査
+
+### WebIP証明書の実在調査
+
 
 ## 発表
 金岡 晃、小山 裕輝、岡田 雅之：IPアドレスをサブジェクトに含んだWebサーバ証明書の調査と分析、2022年暗号と情報セキュリティシンポジウム（SCIS2022）、2022
