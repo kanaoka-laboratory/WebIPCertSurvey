@@ -66,12 +66,31 @@ grep  -r -E '(([1-9]?[0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([1-9]?[0-9]|1[0-
 ## Result
 
 ### Survey of Certificate Policy (CP) and Certification Practice Statement (CPS)  of Major Web Server Certificate Issuer
+|Issuer|Regulations|Location|Descriptions|
+----|----|----|----
+|Let's Encrypt|Yes|CP "3.2.2.5 Authentication for an IP Address"|- Agreed-Upon Change to Website<br>- Email, Fax, SMS, or Postal Mail to IP Address Contact<br>- Reverse Address Lookup<br>- Phone Contact with IP Address Contact<br>- ACME “http-01” method for IP Addresses<br>- ACME “tls-alpn-01” method for IP Addresses|
+|Sectigo|Yes|CPS "3.2.2.1.2 IP Address Verification"|- Agreed-Upon Change to Website<br>- Email, Fax, SMS, or Postal Mail to IP Address Contact<br>- Reverse Address Lookup|
+|DigiCert|Yes|CPS "3.2.2.1 Verification of IP Address"|- Agreed-Upon Change to Website<br>- Email, Fax, SMS, or Postal Mail to IP Address Contact<br>- Reverse Address Lookup<br>- Phone Contact with IP Address Contact<br>- ACME “http-01” method for IP Addresses<br>- ACME “tls-alpn-01” method for IP Addresses|
+|SECOM|No|---||
+|UPKI|No|---||
+
 
 ### Survey of the Existence of Web IP Certificates
+The survey was conducted multiple times. The information for each is shown below.
 
 #### Number of certificates obtained
+|Period|# of hosts with port 443 open|# of certs|
+----|----:|----:
+Nov. 2020| 1,198,326 | 908,071
+Aug. 2021| 1,251,339 | 882.735
+
 
 #### Number of Web IP certificates
+|Period|on Subject|on SAN|on Subject or SAN
+----|----:|----:|----:
+Nov. 2020 | 33,366 | 27,120 | 44,628
+Aug. 2021 | 33,067 | 33,067 | 45,935
+
 
 #### The IP address included in the certificates
 
