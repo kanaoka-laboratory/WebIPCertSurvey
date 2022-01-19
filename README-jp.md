@@ -33,8 +33,8 @@ Webサーバ証明書の設定項目のサブジェクト内のCN (Common Name) 
 |発行者|記載有無|記載場所|記載内容|
 ----|----|----|----
 |Let's Encrypt|あり|CP "3.2.2.5 Authentication for an IP Address"|- Webコンテンツに特定の情報を記載<br>- Email, Fax, SMSまたは郵便による確認<br>- DNS逆引きによる確認<br>- IPアドレス登録機関に登録した電話番号への電話<br>- ACME "http-01" による確認<br>- ACME "tls-alpn-01" による確認|
-|Sectigo|あり|CPS||
-|DigiCert|あり|CPS||
+|Sectigo|あり|CPS "3.2.2.1.2 IP Address Verification"|- Webコンテンツに特定の情報を記載<br>- Email, Fax, SMSまたは郵便による確認<br>- DNS逆引きによる確認|
+|DigiCert|あり|CPS "3.2.2.1 Verification of IP Address"|- Webコンテンツに特定の情報を記載<br>- Email, Fax, SMSまたは郵便による確認<br>- DNS逆引きによる確認<br>- IPアドレス登録機関に登録した電話番号への電話<br>- ACME "http-01" による確認<br>- ACME "tls-alpn-01" による確認|
 |セコム|なし|---||
 |UPKI|なし|---||
 
