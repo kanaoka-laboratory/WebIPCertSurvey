@@ -12,6 +12,22 @@ Despite these risks, there has been no survey on how many certificates are issue
 ## Methodology
 
 ### Survey of Certificate Policy (CP) and Certification Practice Statement (CPS)  of Major Web Server Certificate Issuer
+Check the CP/CPS descriptions of major Web server certificate issuing services to determine if they can issue WebIP certificates and how to check IP addresses when issuing WebIP certificates.
+
+The following five certificate issuing services were surveyed.
+The URLs where the CPs and CPSs of each of them are available are also appended.
+
+- Let's Encrypt
+  - https://letsencrypt.org/documents/isrg-cp-v3.1/
+- Sectigo
+  - https://sectigo.com/uploads/files/Sectigo_CPS_v5_2_3.pdf
+- DigiCert
+  - https://www.digicert.com/content/dam/digicert/pdfs/legal/DigiCert-CPS-V.5.6.pdf
+- SECOM
+  - https://www.secomtrust.net/service/pfw/support/repository.html
+- UPKI Certificate Issuing Service
+  - https://repo1.secomtrust.net/sppca/nii/odca4/index.html
+
 
 ### Survey of the Existence of Web IP Certificates
 
