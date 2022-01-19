@@ -1,4 +1,4 @@
-WebIP証明書証明書の調査と分析
+WebIP証明書の調査と分析
 ====
 English version of README is [here](/README.md)
 
