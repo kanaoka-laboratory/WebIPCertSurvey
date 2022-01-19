@@ -30,12 +30,38 @@ The URLs where the CPs and CPSs of each of them are available are also appended.
 
 
 ### Survey of the Existence of Web IP Certificates
+The existence of the WebIP certificate was surveyed in the following steps
+1. Survey of TCP port 443 openings for all IPv4 addresses
+1. https (TLS) access to IP address with port 443 open
+1. Check the Subject CN and SAN fields of the acquired certificate
+
+The details of each are as follows.
+
 
 #### Survey of TCP port 443 openings for all IPv4 addresses
+From the EC2 instance on the Amazon Web Service, use [ZMAP](https://github.com/zmap/zmap) to examine the hosts that provide services on port 443 using IPv4 addresses on the Internet.
 
 #### https (TLS) access to IP address with port 443 open
+Attempt to make an https connection using openssl s_client to an IPv4 address that has port 443 open. Those that took more than 10 seconds to connect were excluded.
 
-#### Check the Subject CN and SAN fields of the acquired certificate.
+The actual commands we used are as follows.
+
+~~~
+timeout 10s openssl s_client -connect <ip address>:443
+~~~
+
+The obtained certificate is further converted to text using `openssl x509 -text` and saved.
+
+#### Check the Subject CN and SAN fields of the acquired certificate
+From the text of the certificates, extract the line with the Subject field and the line with the SAN field.
+Then perform a match search using IPv4 address regular expressions for those parts.
+If detected, the information of the certificate is saved.
+
+Specifically, we used the grep command on the folder where each certificate is stored as a text file. The commands we used are as follows.
+
+~~~
+grep  -r -E '(([1-9]?[0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([1-9]?[0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5]$)' <folder name> > <result file> &
+~~~
 
 ## Result
 
