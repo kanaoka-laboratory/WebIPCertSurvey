@@ -30,9 +30,18 @@ WebIP証明書の実在調査は以下の段階により行った
 3. 取得証明書のSubject CN（Common Name）とSAN（Subject Alt Name）フィールドの確認
 
 それぞれの詳細は以下の通りである。
+  timeout 10s openssl s_client -connect $line:443
 
 #### 全IPv4アドレスのTCP443番ポート開放調査
-Amazon Web Service上のEC2インスタンスよりZMap[https://github.com/zmap/zmap]を用いてインターネット上のIPv4アドレスで443番ポートのサービスを提供しているホストを調査
+Amazon Web Service上のEC2インスタンスより[ZMap](https://github.com/zmap/zmap)を用いてインターネット上のIPv4アドレスで443番ポートのサービスを提供しているホストを調査
+
+#### 443ポート開放IPアドレスにhttp（TLS）アクセス
+443番ポートを開放しているIPv4アドレスに対し、opensslのs_clientを用いてhttps接続を試みる。接続に10秒以上を要するものを除外した。
+
+実際に利用したコマンドは以下の通りである。
+
+
+
 
 
 
