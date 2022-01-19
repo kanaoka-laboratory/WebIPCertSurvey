@@ -14,10 +14,13 @@ Webサーバ証明書の設定項目のサブジェクト内のCN (Common Name) 
 - Let's Encrypt
   - https://letsencrypt.org/documents/isrg-cp-v3.1/
 - Sectigo
+  - https://sectigo.com/uploads/files/Sectigo_CPS_v5_2_3.pdf
 - DigiCert
+  - https://www.digicert.com/content/dam/digicert/pdfs/legal/DigiCert-CPS-V.5.6.pdf
 - セコム
+  - https://www.secomtrust.net/service/pfw/support/repository.html
 - UPKI電子証明書発行サービス
-
+  - https://repo1.secomtrust.net/sppca/nii/odca4/index.html
 
 
 ### WebIP証明書の実在調査
