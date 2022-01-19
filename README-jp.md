@@ -38,7 +38,8 @@ Amazon Web Service上のEC2インスタンスより[ZMap](https://github.com/zma
 443番ポートを開放しているIPv4アドレスに対し、opensslのs_clientを用いてhttps接続を試みる。接続に10秒以上を要するものを除外した。
 
 実際に利用したコマンドは以下の通りである。
-    timeout 10s openssl s_client -connect $line:443
+
+~~~timeout 10s openssl s_client -connect $line:443~~~
 
 
 
